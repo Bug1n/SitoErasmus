@@ -1,0 +1,93 @@
+/* Nasconde la barra mobile su desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001;
+}
+
+@media (max-width: 690px) {
+    nav#nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 200px;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    nav#nav-menu a {
+        padding: 10px 0;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    nav#nav-menu.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Stili di base per il menu hamburger */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Navigazione standard (desktop) */
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Mobile: nascondi il menu e mostra hamburger */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        flex-direction: column;
+        display: none;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+}

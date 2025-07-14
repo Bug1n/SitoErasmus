@@ -1,0 +1,59 @@
+/* ================ OPENING HOURS SECTION ================ */
+.opening-hours {
+    padding: 60px20px;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.opening-hours h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px4px15px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
+
+td.closed {
+    color: #e74c3c;
+    /* Red to indicate closed */
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
