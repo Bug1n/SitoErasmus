@@ -138,6 +138,8 @@ a {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     padding: 40px;
     padding-bottom: 70px;
+
+
 }
 
 .hero-content {
@@ -147,7 +149,7 @@ a {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 var(--space-md);
-
+    height: 50px;
 
 }
 

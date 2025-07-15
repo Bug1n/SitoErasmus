@@ -1,0 +1,94 @@
+/* ================ MOBILE CONTACTS FIX ================ */
+@media (max-width: 768px) {
+
+    /* Container con padding per footer */
+    .container {
+        padding: 0 0.5rem !important;
+        padding-bottom: 100px !important;
+        /* Spazio per footer */
+    }
+
+    /* CTA section - sistemata */
+    .cta {
+        background: linear-gradient(135deg, #ea580c, #dc2626) !important;
+        color: white !important;
+        text-align: center !important;
+        padding: 2rem !important;
+        border-radius: 15px !important;
+        margin-bottom: 80px !important;
+        /* Spazio extra per footer */
+    }
+
+    .cta h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .cta p {
+        margin-bottom: 1.5rem !important;
+        opacity: 0.9 !important;
+    }
+
+    .btn-cta {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        padding: 1rem 2rem !important;
+        background: white !important;
+        color: #ea580c !important;
+        border: none !important;
+        border-radius: 10px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        cursor: pointer !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .btn-cta:hover {
+        background: #fed7aa !important;
+        transform: scale(1.05) !important;
+    }
+
+    /* Footer sistemato */
+    footer {
+        position: static !important;
+        margin-top: 0 !important;
+        padding: 30px 20px !important;
+        background: #343a40 !important;
+        color: white !important;
+        text-align: center !important;
+    }
+
+    /* Assicura che il footer sia visibile */
+    html,
+    body {
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+
+    body {
+        padding-bottom: 0 !important;
+        overflow-x: hidden !important;
+    }
+}
+
+/* Per schermi molto piccoli */
+@media (max-width: 480px) {
+    .container {
+        padding-bottom: 80px !important;
+    }
+
+    .cta {
+        margin-bottom: 60px !important;
+        padding: 1.5rem !important;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .btn-cta {
+        padding: 0.875rem 1.5rem !important;
+        font-size: 0.95rem !important;
+    }
+}

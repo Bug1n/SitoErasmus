@@ -68,11 +68,13 @@ nav a:hover {
     padding: 80px 10%;
     padding-bottom: 20px;
     background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(255, 101, 132, 0.1) 100%);
+
 }
 
 .hero-text h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+
 }
 
 .hero-text h2 span {

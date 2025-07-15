@@ -1,0 +1,47 @@
+/* ================ NAVBAR SCROLL BEHAVIOR ================ */
+/* Compensa lo spazio per la navbar fissa */
+body {
+    padding-top: 90px;
+    /* Altezza della navbar */
+}
+
+/* Navbar fissa */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Assicura che la navbar sia sopra tutto */
+header.scrolled {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+        /* Altezza ridotta per mobile */
+    }
+
+    /* Menu mobile sempre visibile quando aperto */
+    nav#nav-menu.open {
+        transform: translateX(0) !important;
+    }
+}
+
+/* Aggiustamenti per le pagine specifiche */
+.hero {
+    margin-top: 0 !important;
+}
+
+.about-page {
+    margin-top: 0 !important;
+}
+
+.container {
+    margin-top: 0 !important;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/styleProducts.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/navbar-scroll.css">
 </head>
 
 <body>
@@ -93,7 +94,11 @@
             </div>
         </div>
         <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="scroll-arrow"
+                onclick="document.querySelector('.products-section').scrollIntoView({ behavior: 'smooth' })">
+                <a href="#arrivo"> </a>
+                <!--per far si che il link vada deve esserci un testo, soluzione trovata già con quello sopra-->
+            </div>
         </div>
     </section>
 
@@ -110,6 +115,7 @@
 
             <div class="products-grid" id="productsGrid">
                 <!-- Smartphones -->
+
                 <div class="product-card featured" data-category="smartphones" data-name="apple"
                     onclick="openProductModal('apple')">
                     <div class="product-header">
@@ -526,6 +532,7 @@
 
     <!-- Productos que Vendemos -->
     <section class="products-we-sell">
+        <a name="arrivo"></a>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title" style="color: #f59e0b;">Productos que Vendemos</h2>

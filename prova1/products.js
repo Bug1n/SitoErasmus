@@ -543,7 +543,7 @@ const TestimonialManager = {
     startAutoplay() {
         setInterval(() => {
             this.nextSlide();
-        }, 3200);
+        }, 4500);
     }
 };
 
