@@ -1,13 +1,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Presentation of products">
     <title>ViveTuMóvil - Reparación de Celulares Sevilla</title>
+    <meta name="author" content="Bugin Luca ">
+    <meta name="description"
+        content="Page with detailed datas about the products and services offered, focus on the available brands and models">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/styleProducts.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/navbar-scroll.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 </head>
 
 <body>
@@ -31,6 +40,8 @@
         </nav>
     </header>
 
+
+    <!-- Search filters -->
     <section class="search-section">
         <div class="container">
             <div class="search-container">
@@ -66,7 +77,7 @@
         </div>
     </section>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with 3 datas-->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -102,8 +113,6 @@
         </div>
     </section>
 
-    <!-- Search and Filters -->
-
 
     <!-- Products Grid -->
     <section class="products-section">
@@ -114,6 +123,7 @@
             </div>
 
             <div class="products-grid" id="productsGrid">
+                <!-- Section for Dispositivos: smartphone, tablets, laptop and gaming -->
                 <!-- Smartphones -->
 
                 <div class="product-card featured" data-category="smartphones" data-name="apple"
@@ -292,7 +302,9 @@
                     </div>
                 </div>
 
-                <!-- Gaming -->
+
+
+                <!-- Productos for Gaming -->
                 <div class="product-card featured" data-category="gaming" data-name="playstation"
                     onclick="openProductModal('ps5')">
                     <div class="product-header">
@@ -380,7 +392,7 @@
                     </div>
                 </div>
 
-                <!-- Computers -->
+                <!-- Products: Computers -->
                 <div class="product-card" data-category="computers" data-name="asus" onclick="openProductModal('asus')">
                     <div class="product-header">
                         <div class="product-logo">
@@ -437,7 +449,7 @@
                     </div>
                 </div>
 
-                <!-- Tablets -->
+                <!-- Products: Tablets -->
                 <div class="product-card" data-category="tablets" data-name="galaxy"
                     onclick="openProductModal('galaxy')">
                     <div class="product-header">
@@ -479,6 +491,8 @@
         </div>
     </section>
 
+
+    <!--Section for the service that the shop offers -->
     <!-- Services Section -->
     <section class="services-section">
         <div class="container">
@@ -632,6 +646,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- Testimonials -->
     <section class="testimonials-section">
         <div class="container">
@@ -652,6 +668,7 @@
                         </div>
                         <p>"Yo he estado 3 veces, con distintos problemas en el móvil, y siempre me han tratado muy bien
                             y me ha resultado bien de precio.."</p>
+                        <!-- The testimonials are rela, took from Google maps-->
                         <div class="testimonial-author">
                             <div class="author-avatar">R</div>
                             <div class="author-info">
@@ -763,7 +780,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer> <!-- Footer, equals for all pages -->
         <p>© ViveTuMòvil. Todos los derechos reservados.</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/vivetumovil/?locale=es_LA"><i class="fab fa-facebook"></i></a>

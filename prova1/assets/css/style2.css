@@ -219,7 +219,7 @@
 /* ======= FAQ SECTION ======= */
 .faq {
     background: var(--colorBack);
-    padding: 40px 20px;
+    padding: 40px 0px;
     text-align: center;
 }
 

@@ -145,17 +145,19 @@ nav a:hover {
 }
 
 .btn-call {
-    background: #16a34a;
-    color: white;
+    background: #d4ffe2;
+    color: #16a34a;
+    border: 2px solid #16a34a;
 }
 
 .btn-call:hover {
-    background: #15803d;
+    background: #16a34a;
     transform: translateY(-2px);
+    color: white;
 }
 
 .btn-directions {
-    background: white;
+    background: #fff2eb;
     color: #ea580c;
     border: 2px solid #ea580c;
 }
@@ -167,9 +169,9 @@ nav a:hover {
 }
 
 .btn-share {
-    background: white;
+    background: #ecf2ff;
     color: #6b7280;
-    border: 2px solid #d1d5db;
+    border: 2px solid #999fa7;
 }
 
 .btn-share:hover {
@@ -225,9 +227,10 @@ nav a:hover {
 .service {
     text-align: center;
     padding: 1rem;
-    background: linear-gradient(135deg, #e8dbcd, #fdba74);
+    background: linear-gradient(135deg, #fed7aa, #fdba74);
     border-radius: 10px;
     transition: all 0.3s ease;
+    border: 2px solid #ea580c;
 }
 
 .service:hover {
@@ -277,6 +280,7 @@ nav a:hover {
 .contact:hover {
     background: #f1f5f9;
     transform: translateX(5px);
+    border: 1px solid #ea580c;
 }
 
 .contact i {
