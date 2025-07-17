@@ -1,4 +1,5 @@
 // ViveTuMovil - Optimized JavaScript
+// This script handles the main functionalities of the ViveTuMovil website
 
 function changePage(page) {
     // Redirects to the specified page

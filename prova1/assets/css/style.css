@@ -178,8 +178,10 @@ footer {
 
 /* ================ ABOUT US PAGE ================ */
 .about-page {
-    padding: 20px 10%
-        /* Extra padding to avoid footer overlap */
+    padding: 20px 10%;
+    /* Extra padding to avoid footer overlap */
+    margin-bottom: 10px;
+    ;
 }
 
 .about-hero {
@@ -539,7 +541,7 @@ footer {
 
 /* ================ ADDITIONAL SERVICE SECTION ================ */
 .additional-service {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 .service-content {

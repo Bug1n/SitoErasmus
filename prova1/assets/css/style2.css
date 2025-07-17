@@ -328,3 +328,108 @@
         padding: 15px 20px;
     }
 }
+
+/* Sostituisci il CSS precedente con questo */
+.orario-negozio {
+    background: transparent;
+    /* Rimuove lo sfondo */
+    padding: 2rem 0;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.orario-titolo {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.orario-titolo:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+}
+
+.orario-griglia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.giorno {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 1.2rem 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid #3498db;
+    backdrop-filter: blur(5px);
+}
+
+.giorno.chiuso {
+    border-top-color: #e74c3c;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.giorno-nome {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.giorno-orari {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.fascia {
+    font-size: 0.85rem;
+    color: #34495e;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.giorno:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* Evidenzia giorno corrente */
+.giorno.oggi {
+    background: #3498db;
+    border-top-color: #2980b9;
+}
+
+.giorno.oggi .giorno-nome,
+.giorno.oggi .fascia {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .orario-griglia {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .orario-griglia {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

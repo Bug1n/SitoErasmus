@@ -73,6 +73,68 @@
         </div>
     </section>
 
+    <!-- Aggiungi questo nel tuo index.html -->
+    <section class="orario-negozio">
+        <h2 class="orario-titolo">HORARIO DE APERTURA</h2>
+        <div class="orario-griglia">
+            <!-- Lunedì -->
+            <div class="giorno">
+                <div class="giorno-nome">LUN</div>
+                <div class="giorno-orari">
+                    <span class="fascia">10:00 - 14:00</span>
+                    <span class="fascia">17:30 - 20:30</span>
+                </div>
+            </div>
+
+            <!-- Martedì -->
+            <div class="giorno">
+                <div class="giorno-nome">MAR</div>
+                <div class="giorno-orari">
+                    <span class="fascia">10:00 - 14:00</span>
+                    <span class="fascia">17:30 - 20:30</span>
+                </div>
+            </div>
+            <div class="giorno">
+                <div class="giorno-nome">MIÉR</div>
+                <div class="giorno-orari">
+                    <span class="fascia">10:00 - 14:00</span>
+                    <span class="fascia">17:30 - 20:30</span>
+                </div>
+            </div>
+
+            <div class="giorno">
+                <div class="giorno-nome">JUE</div>
+                <div class="giorno-orari">
+                    <span class="fascia">10:00 - 14:00</span>
+                    <span class="fascia">17:30 - 20:30</span>
+                </div>
+            </div>
+            <div class="giorno">
+                <div class="giorno-nome">VIER</div>
+                <div class="giorno-orari">
+                    <span class="fascia">10:00 - 14:00</span>
+                    <span class="fascia">17:30 - 20:30</span>
+                </div>
+            </div>
+
+            <!-- Sabato -->
+            <div class="giorno chiuso">
+                <div class="giorno-nome">SÁB</div>
+                <div class="giorno-orari">
+                    <span class="fascia">🥧 CERRADO</span>
+                </div>
+            </div>
+
+            <!-- Domenica -->
+            <div class="giorno chiuso">
+                <div class="giorno-nome">DOM</div>
+                <div class="giorno-orari">
+                    <span class="fascia">🥧 CERRADO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SEZIONE DELLE MARCHE DI TELEFONINI E DISPOSITIVI IN GENERALE-->
 
     <section class="brands">
@@ -80,7 +142,7 @@
         <p style="color: #555; margin-top: 10px; margin-bottom: 10px;">Ofrecemos reparación para una amplia gama de
             marcas y modelos.
         </p>
-        <div class="brands-grid" onclick="changePage('products.html')">
+        <div class="brands-grid" onclick="changePage('products.html')" loading="lazy">
             <div class="brand-item"><img src="assets/images/apple.png" alt="Apple"></div>
             <div class="brand-item"><img src="assets/images/samsung.png" alt="Samsung"></div>
             <div class="brand-item"><img src="assets/images/xiaomi.png" alt="Xiaomi"></div>
@@ -281,6 +343,20 @@
             faqItem.classList.add('active');
         }
     }
+
+    // Aggiungi questo script prima di </body>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const giorniSettimana = ['dom', 'lun', 'mar', 'miér', 'jue', 'vier', 'sáb'];
+        const oggiIndex = new Date().getDay();
+
+        document.querySelectorAll('.giorno-nome').forEach(el => {
+            if (el.textContent.toLowerCase() === giorniSettimana[oggiIndex]) {
+                el.closest('.giorno').classList.add('oggi');
+            }
+        });
+    });
+
 </script>
 
 </html>
