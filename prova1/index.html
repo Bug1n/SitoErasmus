@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="author" content="Bugin Luca ">
-    <meta name="description" content="Welcome page with a general presentation of the shop">
-    <meta content="Welcome page">
+
     <title>ViveTuMòvil | Taller de electrónica y reparación.</title>
-    <link rel=" stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/navbar-scroll.css">
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
@@ -46,6 +40,9 @@
 
 
     <!-- Hero Section (Main Welcome) -->
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-bfcebd18-fc86-43a5-bf63-6d9dd14112de" data-elfsight-app-lazy></div>
     <section class="hero">
         <div class="hero-text">
             <h2>Reparaciones <span>Ràpidas</span> & Confiables</h2>
@@ -73,68 +70,6 @@
         </div>
     </section>
 
-    <!-- Aggiungi questo nel tuo index.html -->
-    <section class="orario-negozio">
-        <h2 class="orario-titolo">HORARIO DE APERTURA</h2>
-        <div class="orario-griglia">
-            <!-- Lunedì -->
-            <div class="giorno">
-                <div class="giorno-nome">LUN</div>
-                <div class="giorno-orari">
-                    <span class="fascia">10:00 - 14:00</span>
-                    <span class="fascia">17:30 - 20:30</span>
-                </div>
-            </div>
-
-            <!-- Martedì -->
-            <div class="giorno">
-                <div class="giorno-nome">MAR</div>
-                <div class="giorno-orari">
-                    <span class="fascia">10:00 - 14:00</span>
-                    <span class="fascia">17:30 - 20:30</span>
-                </div>
-            </div>
-            <div class="giorno">
-                <div class="giorno-nome">MIÉR</div>
-                <div class="giorno-orari">
-                    <span class="fascia">10:00 - 14:00</span>
-                    <span class="fascia">17:30 - 20:30</span>
-                </div>
-            </div>
-
-            <div class="giorno">
-                <div class="giorno-nome">JUE</div>
-                <div class="giorno-orari">
-                    <span class="fascia">10:00 - 14:00</span>
-                    <span class="fascia">17:30 - 20:30</span>
-                </div>
-            </div>
-            <div class="giorno">
-                <div class="giorno-nome">VIER</div>
-                <div class="giorno-orari">
-                    <span class="fascia">10:00 - 14:00</span>
-                    <span class="fascia">17:30 - 20:30</span>
-                </div>
-            </div>
-
-            <!-- Sabato -->
-            <div class="giorno chiuso">
-                <div class="giorno-nome">SÁB</div>
-                <div class="giorno-orari">
-                    <span class="fascia">🥧 CERRADO</span>
-                </div>
-            </div>
-
-            <!-- Domenica -->
-            <div class="giorno chiuso">
-                <div class="giorno-nome">DOM</div>
-                <div class="giorno-orari">
-                    <span class="fascia">🥧 CERRADO</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- SEZIONE DELLE MARCHE DI TELEFONINI E DISPOSITIVI IN GENERALE-->
 
     <section class="brands">
@@ -142,7 +77,7 @@
         <p style="color: #555; margin-top: 10px; margin-bottom: 10px;">Ofrecemos reparación para una amplia gama de
             marcas y modelos.
         </p>
-        <div class="brands-grid" onclick="changePage('products.html')" loading="lazy">
+        <div class="brands-grid" onclick="changePage('products.html')">
             <div class="brand-item"><img src="assets/images/apple.png" alt="Apple"></div>
             <div class="brand-item"><img src="assets/images/samsung.png" alt="Samsung"></div>
             <div class="brand-item"><img src="assets/images/xiaomi.png" alt="Xiaomi"></div>
@@ -207,13 +142,13 @@
     <!-- Sección de revisión -->
     <section class="testimonials">
 
-        <!-- Elfsight Google Reviews | Untitled Google Reviews API for the official Google Reviews-->
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-25709692-9e04-49ba-ac21-b08616a2587b" data-elfsight-app-lazy></div>
 
     </section>
 
-    <!-- FAQ Section, real answers. -->
+    <!-- FAQ Section -->
     <section class="faq">
         <h2>FAQ - Preguntas frecuentes</h2>
         <div class="faq-container">
@@ -312,9 +247,57 @@
         </div>
     </section>
 
+    <!-- Horario de Apertura Section -->
+    <section class="schedule">
+        <h2>Horario de Apertura</h2>
+        <div class="schedule-container">
+            <div class="schedule-table">
+                <div class="schedule-row header">
+                    <div class="schedule-day">Día</div>
+                    <div class="schedule-time">Horario</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Lunes</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Martes</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Miércoles</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Jueves</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Viernes</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row closed">
+                    <div class="schedule-day">Sábado</div>
+                    <div class="schedule-time">🚧 Cerrado</div>
+                </div>
+                <div class="schedule-row closed">
+                    <div class="schedule-day">Domingo</div>
+                    <div class="schedule-time">🚧 Cerrado</div>
+                </div>
+            </div>
+            <div class="schedule-status">
+                <div class="status-indicator">
+                    <i class="fas fa-clock"></i>
+                    <span id="store-status">Abierto ahora</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer (Same for all pages) -->
     <footer>
         <p>© ViveTuMòvil. Todos los derechos reservados.</p>
+        <p>Monday- Friday: 10:00-14:00; 17:30-20:30</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/vivetumovil/?locale=es_LA"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/rafa_vivetumovil/"><i class="fab fa-instagram"></i></a>
@@ -325,8 +308,44 @@
 </body>
 <script src="script.js"></script>
 <script src="script_nav.js"></script>
-<script> //script only for FAQ purpose
+<script>
     textMobile();
+
+    // Schedule Status Update
+    function updateStoreStatus() {
+        const now = new Date();
+        const hour = now.getHours();
+        const day = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+
+        const statusElement = document.getElementById('store-status');
+        const statusIndicator = document.querySelector('.status-indicator');
+
+        if (!statusElement || !statusIndicator) return;
+
+        // Weekend (Saturday = 6, Sunday = 0)
+        if (day === 0 || day === 6) {
+            statusElement.textContent = 'Cerrado';
+            statusIndicator.classList.add('closed');
+            return;
+        }
+
+        // Weekday hours: 10:00-14:00 and 17:30-20:30
+        const isOpen = (hour >= 10 && hour < 14) || (hour >= 17 && hour < 21);
+
+        if (isOpen) {
+            statusElement.textContent = 'Abierto ahora';
+            statusIndicator.classList.remove('closed');
+        } else {
+            statusElement.textContent = 'Cerrado';
+            statusIndicator.classList.add('closed');
+        }
+    }
+
+    // Update status on page load
+    updateStoreStatus();
+
+    // Update status every minute
+    setInterval(updateStoreStatus, 60000);
 
     // FAQ Toggle Function
     function toggleFAQ(element) {
@@ -343,20 +362,6 @@
             faqItem.classList.add('active');
         }
     }
-
-    // Aggiungi questo script prima di </body>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const giorniSettimana = ['dom', 'lun', 'mar', 'miér', 'jue', 'vier', 'sáb'];
-        const oggiIndex = new Date().getDay();
-
-        document.querySelectorAll('.giorno-nome').forEach(el => {
-            if (el.textContent.toLowerCase() === giorniSettimana[oggiIndex]) {
-                el.closest('.giorno').classList.add('oggi');
-            }
-        });
-    });
-
 </script>
 
 </html>

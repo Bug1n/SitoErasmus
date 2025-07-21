@@ -4,7 +4,6 @@
     /* About page generale */
     .about-page {
         padding: 20px 5% !important;
-        padding-bottom: 100px !important;
         /* Spazio per footer */
     }
 
@@ -204,7 +203,6 @@
 @media (max-width: 480px) {
     .about-page {
         padding: 15px 3% !important;
-        padding-bottom: 80px !important;
     }
 
     .hero-text h2 {

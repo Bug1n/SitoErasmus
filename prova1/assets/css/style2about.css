@@ -1,8 +1,8 @@
 /* ================ OPENING HOURS SECTION ================ */
 .opening-hours {
-    padding: 60px20px;
+    padding: 60px 20px;
     text-align: center;
-    padding-top: 65px;
+    padding-top: 2px;
     padding-bottom: 65px;
 }
 
@@ -10,6 +10,8 @@
     font-size: 2rem;
     margin-bottom: 30px;
     color: var(--primary);
+    padding-top: 20px;
+    ;
 }
 
 .table-container {
