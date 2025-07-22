@@ -1,0 +1,278 @@
+/* ================ MEDIA QUERY PER PAGINA ABOUT MOBILE ================ */
+@media (max-width: 768px) {
+
+    /* About page generale */
+    .about-page {
+        padding: 20px 5% !important;
+        /* Spazio per footer */
+    }
+
+    /* Hero section about */
+    .hero-content {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    .divider-line {
+        display: none !important;
+    }
+
+    .hero-text {
+        padding-right: 0 !important;
+        text-align: center !important;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem !important;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem !important;
+    }
+
+    .hero-map {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    .hero-map iframe {
+        width: 100% !important;
+        height: 250px !important;
+    }
+
+    /* Mission section - SISTEMATA */
+    .mission {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 40px !important;
+        margin-bottom: 60px !important;
+        padding: 30px 0 !important;
+    }
+
+    .mission-text {
+        order: 1 !important;
+        margin-bottom: 30px !important;
+    }
+
+    .mission-image {
+        order: 1 !important;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 35% !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .mission-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 150px !important;
+    }
+
+    /* Stats section - SISTEMATA IN COLONNA */
+    .stats {
+        flex-direction: column !important;
+        gap: 25px !important;
+        margin-bottom: 60px !important;
+        padding: 20px 0 !important;
+    }
+
+    .stat-card {
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        padding: 25px !important;
+        width: 100% !important;
+    }
+
+    .stat-card h4 {
+        font-size: 2.2rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .stat-card p {
+        font-size: 1.1rem !important;
+    }
+
+    /* Hub, ATM, and Service sections */
+    .hub-content,
+    .atm-content,
+    .service-content {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .hub-text,
+    .atm-text,
+    .service-text {
+        padding-right: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hub-text h3,
+    .atm-text h3,
+    .service-text h3 {
+        font-size: 1.8rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hub-image,
+    .atm-image,
+    .service-image {
+        width: 100% !important;
+        max-width: 350px !important;
+        margin: 0 auto !important;
+    }
+
+    .hub-image img,
+    .atm-image img {
+        height: 200px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .service-image img {
+        max-width: 200px !important;
+        height: auto !important;
+    }
+
+    /* Opening hours table */
+    .opening-hours {
+        padding: 40px 5% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .table-container {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    table {
+        min-width: 700px !important;
+        font-size: 0.9rem !important;
+    }
+
+    th,
+    td {
+        padding: 8px !important;
+        white-space: nowrap !important;
+    }
+
+    /* CTA button */
+    .cta-button {
+        display: inline-block !important;
+        background: #fb7907 !important;
+        color: white !important;
+        padding: 12px 24px !important;
+        border-radius: 25px !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
+        margin-top: 20px !important;
+    }
+
+    .cta-button:hover {
+        background: #e0690b !important;
+        transform: translateY(-2px) !important;
+    }
+
+    /* FOOTER SISTEMATO */
+    footer {
+        position: static !important;
+        margin-top: 50px !important;
+        padding: 30px 20px !important;
+        background: #343a40 !important;
+        color: white !important;
+        text-align: center !important;
+    }
+
+    .social-icons {
+        margin-top: 15px !important;
+    }
+
+    .social-icons a {
+        margin: 0 10px !important;
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Media query per schermi molto piccoli */
+@media (max-width: 480px) {
+    .about-page {
+        padding: 15px 3% !important;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8rem !important;
+        padding-top: 0.5cm;
+    }
+
+    .hero-text p {
+        font-size: 1rem !important;
+    }
+
+    .hero-map iframe {
+        height: 200px !important;
+    }
+
+    .stat-card {
+        padding: 20px !important;
+        max-width: 280px !important;
+    }
+
+    .stat-card h4 {
+        font-size: 2rem !important;
+    }
+
+    .mission-image {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .mission-image img {
+        max-width: 120px !important;
+    }
+
+    .hub-text h3,
+    .atm-text h3,
+    .service-text h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .hub-text p,
+    .atm-text p,
+    .service-text p {
+        font-size: 1rem !important;
+    }
+
+    table {
+        font-size: 0.8rem !important;
+    }
+
+    th,
+    td {
+        padding: 6px !important;
+    }
+}
+
+/* Rimozione degli spazi bianchi laterali su mobile */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+        padding-bottom: 0 !important;
+    }
+
+    * {
+        max-width: 100% !important;
+    }
+
+    /* Assicura che il footer sia visibile */
+    html,
+    body {
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ViveTuMòvil | Taller de electrónica y reparación.</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/navbar-scroll.css">
+    <link rel="stylesheet" href="assets/css/schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo" onclick="changePage('index.html')">
+            <img src="assets/images/Logo_VTM_sin_fondo.png" alt="ViveTuMòvil Logo">
+            <!--<h1>ViveTuMòvil</h1> -->
+        </div>
+
+        <!-- Hamburger menu (mobile) -->
+        <button class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation menu -->
+        <nav id="nav-menu">
+            <a href="index.html" class="active">🏠Home</a>
+            <a href="about.html">👤Quienes somos</a>
+            <a href="products.html">📱Productos</a>
+            <a href="contacts.html">📩 Contactos</a>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Section (Main Welcome) -->
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-bfcebd18-fc86-43a5-bf63-6d9dd14112de" data-elfsight-app-lazy></div>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Reparaciones <span>Ràpidas</span> & Confiables</h2>
+            <p>Servicio técnico profesional para móviles, tablets, ordenadores y demás dispositivos electrónicos.</p>
+
+
+            <div class="container">
+                <div class="address-box">
+                    <p>Puedes encontrarnos en nuestra sede de Sevilla:</p>
+                    <a href="https://maps.google.com/?q=C.+Virgen+del+Valle,+73,+41011+Sevilla" target="_blank"
+                        class="address-button" id="address-button-id">📍 C. Virgen del Valle, 73, 41011 Sevilla</a>
+                </div>
+            </div>
+
+
+
+            <div class="hero-buttons">
+                <a href="contacts.html" class="btn-repair">Reparar Ahora</a>
+                <!-- Here link on Contacts and Map of the position in Seville-->
+                <a href="products.html" class="btn-products">Nuestros productos</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/muñeco_sin_fondo.png" alt="ViveTuMòvil Logo" class="float-animation">
+        </div>
+    </section>
+
+    <!-- SEZIONE DELLE MARCHE DI TELEFONINI E DISPOSITIVI IN GENERALE-->
+
+    <section class="brands">
+        <h2>Marcas que reparamos</h2>
+        <p style="color: #555; margin-top: 10px; margin-bottom: 10px;">Ofrecemos reparación para una amplia gama de
+            marcas y modelos.
+        </p>
+        <div class="brands-grid" onclick="changePage('products.html')">
+            <div class="brand-item"><img src="assets/images/apple.png" alt="Apple"></div>
+            <div class="brand-item"><img src="assets/images/samsung.png" alt="Samsung"></div>
+            <div class="brand-item"><img src="assets/images/xiaomi.png" alt="Xiaomi"></div>
+            <div class="brand-item"><img src="assets/images/huawei.png" alt="Huawei"></div>
+            <div class="brand-item"><img src="assets/images/google.png" alt="Google"></div>
+            <div class="brand-item"><img src="assets/images/redmi.png" alt="Redmi"></div>
+            <div class="brand-item"><img src="assets/images/ps5.png" alt="PS5"></div>
+            <div class="brand-item"><img src="assets/images/realme.png" alt="Realme"></div>
+            <div class="brand-item"><img src="assets/images/honor.png" alt="Honor"></div>
+            <div class="brand-item"><img src="assets/images/motorola.png" alt="Motorola"></div>
+            <div class="brand-item"><img src="assets/images/oppo.png" alt="Oppo"></div>
+            <div class="brand-item"><img src="assets/images/nokia.png" alt="Nokia"></div>
+            <div class="brand-item"><img src="assets/images/galaxy.png" alt="Galaxy"></div>
+            <div class="brand-item"><img src="assets/images/sony.png" alt="Sony"></div>
+            <div class="brand-item"><img src="assets/images/LG.png" alt="LG"></div>
+            <div class="brand-item"><img src="assets/images/nintendo.png" alt="Nintendo"></div>
+            <div class="brand-item"><img src="assets/images/asus.png" alt="Asus"></div>
+            <div class="brand-item"><img src="assets/images/HP.png" alt="HP"></div>
+            <div class="brand-item"><img src="assets/images/acer.png" alt="Acer"></div>
+            <div class="brand-item"><img src="assets/images/onePlus.png" alt="OnePlus"></div>
+            <div class="brand-item"><img src="assets/images/xbox.png" alt="xbox"></div>
+        </div> <!--21 marcas-->
+        <p style="color: #e45f5f; margin-top: 25px; margin-bottom: 10px; "><b>
+                ¡Y mucho más! ¿Qué esperas? ¡Visítanos!
+            </b>
+        </p>
+    </section>
+
+
+
+    <!-- Sección: Nuestros Servicios -->
+    <section class=" services">
+        <h2>Nuestros servicios</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Reparación de pantalla</h3>
+                <p>Sustituimos pantallas y cristales dañados de cualquier modelo de móvil o tablet.
+                </p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-battery-half"></i>
+                <h3>Reemplazo de batería</h3>
+                <p>Instalamos baterías nuevas y garantizadas para que tu dispositivo vuelva a rendir como el primer día.
+                </p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Venta</h3>
+                <p>Tenemos accesorios para todos tus dispositivos: auriculares, teclados, fundas y mucho más.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Reparación de ordenadores portátiles, móviles y tabletas.</h3>
+                <p>Servicios de reparación de hardware y software para móviles, portátiles y tabletas de todas las
+                    marcas.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de revisión -->
+    <section class="testimonials">
+
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-25709692-9e04-49ba-ac21-b08616a2587b" data-elfsight-app-lazy></div>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>FAQ - Preguntas frecuentes</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Cuanto tiempo tarda una reparación?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Los tiempos de reparación varían según el tipo de servicio. Para reparaciones sencillas, como el
+                        cambio de cristal o batería, solemos completar el trabajo en un par de horas. En reparaciones
+                        más complejas, el plazo puede ser de 1 a 3 días hábiles o más.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Reparan todas las marcas de smartphones?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sí, reparamos las principales marcas de smartphones, como Apple, Samsung, Xiaomi, Huawei, Google,
+                        OnePlus, Motorola, Oppo, Realme y muchas más. Contamos con repuestos compatibles para la mayoría
+                        de los modelos.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿También ofrecen reparaciones de tabletas o portátiles?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Además de smartphones, ofrecemos servicios de reparación para tablets, portátiles, consolas de
+                        videojuegos y otros dispositivos electrónicos. Nos ocupamos tanto de problemas de hardware como
+                        de software.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Es necesario hacer cita?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No es necesario reservar. Puedes venir a la tienda, contarnos el problema y nos encargaremos de
+                        solucionarlo. </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Puedo venir sin reserva?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Aceptamos clientes sin reserva, aunque en temporada alta es posible que haya que esperar. Para
+                        agilizar el servicio, le recomendamos llamarnos antes de su visita.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Sus reparaciones vienen con garantía?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Generalmente sí, aunque depende del dispositivo y de la gravedad del problema. El período de
+                        garantía varía según el tipo de problema y el método de reparación.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Utilizáis piezas originales o compatibles?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Utilizamos piezas originales y compatibles de alta calidad, según la disponibilidad y las
+                        preferencias del cliente. Las piezas compatibles ofrecen una excelente relación calidad-precio
+                        sin comprometer la fiabilidad.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <h3>¿Ofrecen cotizaciones gratuitas?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Cada presupuesto tiene un coste de 5 €. Trae tu dispositivo y, por solo 5 €, lo analizaremos y te
+                        informaremos de todo lo necesario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horario de Apertura Section -->
+    <section class="schedule">
+        <h2>Horario de Apertura</h2>
+        <div class="schedule-container">
+            <div class="schedule-table">
+                <div class="schedule-row header">
+                    <div class="schedule-day">Día</div>
+                    <div class="schedule-time">Horario</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Lunes</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Martes</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Miércoles</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Jueves</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row">
+                    <div class="schedule-day">Viernes</div>
+                    <div class="schedule-time">10:00 - 14:00 | 17:30 - 20:30</div>
+                </div>
+                <div class="schedule-row closed">
+                    <div class="schedule-day">Sábado</div>
+                    <div class="schedule-time">🚧 Cerrado</div>
+                </div>
+                <div class="schedule-row closed">
+                    <div class="schedule-day">Domingo</div>
+                    <div class="schedule-time">🚧 Cerrado</div>
+                </div>
+            </div>
+            <div class="schedule-status">
+                <div class="status-indicator">
+                    <i class="fas fa-clock"></i>
+                    <span id="store-status">Abierto ahora</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same for all pages) -->
+    <footer>
+        <p>© ViveTuMòvil. Todos los derechos reservados.</p>
+        <p style="color: #e47e5f;"> <strong>Monday- Friday: 10:00-14:00; 17:30-20:30</strong> </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/vivetumovil/?locale=es_LA" style="color: rgb(0, 174, 255);"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/rafa_vivetumovil/" style="color: #E1306C;"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="" onclick="handleCall()" style="color: rgb(4, 214, 4);"><i class="fa-solid fa-phone"></i></a>
+        </div>
+
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="script_nav.js"></script>
+<script>
+    textMobile();
+
+    // Schedule Status Update
+    function updateStoreStatus() {
+        const now = new Date();
+        const hour = now.getHours();
+        const day = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+
+        const statusElement = document.getElementById('store-status');
+        const statusIndicator = document.querySelector('.status-indicator');
+
+        if (!statusElement || !statusIndicator) return;
+
+        // Weekend (Saturday = 6, Sunday = 0)
+        if (day === 0 || day === 6) {
+            statusElement.textContent = 'Cerrado';
+            statusIndicator.classList.add('closed');
+            return;
+        }
+
+        // Weekday hours: 10:00-14:00 and 17:30-20:30
+        const isOpen = (hour >= 10 && hour < 14) || (hour >= 17 && hour < 21);
+
+        if (isOpen) {
+            statusElement.textContent = 'Abierto ahora';
+            statusIndicator.classList.remove('closed');
+        } else {
+            statusElement.textContent = 'Cerrado';
+            statusIndicator.classList.add('closed');
+        }
+    }
+
+    // Update status on page load
+    updateStoreStatus();
+
+    // Update status every minute
+    setInterval(updateStoreStatus, 60000);
+
+    // FAQ Toggle Function
+    function toggleFAQ(element) {
+        const faqItem = element.parentElement;
+        const isActive = faqItem.classList.contains('active');
+
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.classList.remove('active');
+        });
+
+        // Toggle current item
+        if (!isActive) {
+            faqItem.classList.add('active');
+        }
+    }
+</script>
+
+</html>

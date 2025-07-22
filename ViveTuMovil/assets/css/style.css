@@ -1,0 +1,651 @@
+/* ================ BASE STYLES ================ */
+:root {
+    --primary: #fb7907;
+    --secondary: #030000;
+    --accent: #ff6584;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7ff;
+}
+
+/* ================ HEADER ================ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    font-size: 17px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* ================ HERO SECTION ================ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    padding-bottom: 20px;
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.1) 0%, rgba(255, 101, 132, 0.1) 100%);
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text h2 span {
+    color: var(--primary);
+}
+
+p span {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+
+}
+
+.btn-repair {
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-repair:hover {
+    background: var(--secondary);
+    transform: translateY(-2px);
+}
+
+.btn-products {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-products:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    max-width: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ================ FOOTER ================ */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+}
+
+/* ================ ABOUT US PAGE ================ */
+.about-page {
+    padding: 20px 10%;
+    /* Extra padding to avoid footer overlap */
+
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-hero h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.mission {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+
+}
+
+
+
+.mission-text {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mission-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.mission-image {
+
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70px;
+    height: 83px;
+    border-left: 30px;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.mission-image img:hover {
+    transform: scale(1.03);
+}
+
+.stats {
+    display: flex;
+
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-card h4 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* ================ FOOTER FIXED AT BOTTOM ================ */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ================ HERO SPLIT SECTION ================ */
+.about-hero {
+    margin-bottom: 60px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.divider-line {
+    width: 2px;
+    height: 250px;
+    background: linear-gradient(to bottom, var(--primary), #ccc);
+    margin: 0 20px;
+}
+
+.hero-map {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.google-map {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Responsive: Switch to Stacked Layout on Mobile */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .divider-line {
+        display: none;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero-map {
+        width: 100%;
+    }
+}
+
+/* Hero Enhanced */
+.hero-enhanced {
+    background: #fff7f0;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff7a00;
+}
+
+.container-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-enhanced h1 {
+    font-size: 2.5em;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+.hero-enhanced p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.hero-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.icon-box i {
+    font-size: 2.5em;
+    color: #ff7a00;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Confidenza Hero (sezione "Perché sceglierci") */
+.confidenza-hero {
+    background: #fffbe6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.confidenza-hero h3 {
+    color: #ff7a00;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.confidenza-hero .hero-icons .icon-box i {
+    font-size: 2em;
+}
+
+/* Testimonio Hero */
+.testimonio-hero {
+    background: #ffe6cc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonio-hero blockquote {
+    font-style: italic;
+    border-left: 5px solid #ff7a00;
+    padding: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonio-hero footer {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* ================ AMAZON HUB SECTION ================ */
+.amazon-hub {
+    margin-bottom: 80px;
+}
+
+.hub-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hub-text {
+    flex: 1;
+    padding-right: 20px;
+    padding-top: 2cm;
+}
+
+.hub-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.hub-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.hub-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hub-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.hub-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ================ COIN FLIP ATM SECTION ================ */
+.coinflip-atm {
+    margin-bottom: 80px;
+}
+
+.atm-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.atm-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.atm-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.atm-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.atm-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.atm-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.atm-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ================ ADDITIONAL SERVICE SECTION ================ */
+.additional-service {
+    margin-bottom: 80px;
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.service-text h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.service-image {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(251, 121, 7, 0.1), rgba(251, 121, 7, 0.05));
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-image img {
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.service-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ================ RESPONSIVE DESIGN FOR NEW SECTIONS ================ */
+@media (max-width: 768px) {
+
+    .hub-content,
+    .atm-content,
+    .service-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hub-text,
+    .atm-text,
+    .service-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hub-image,
+    .atm-image,
+    .service-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .hub-image img,
+    .atm-image img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-image {
+        display: none;
+        /*non fa vedere il logo grande che va su e giù*/
+    }
+
+    .address-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+
+}
+
+#__EAAPS_PORTAL {
+    /* ocultar publicidad */
+    display: none;
+
+}
